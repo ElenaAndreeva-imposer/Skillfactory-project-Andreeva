@@ -1,0 +1,256 @@
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1208px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.btn {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 1;
+  background-color: #e3b873;
+  text-transform: uppercase;
+  padding: 0;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.title {
+  font-family: 'Yeseva One';
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'Yeseva One';
+  font-weight: 400;
+  color: #e3b873;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.projects-section {
+  padding-top: 50px;
+  padding-bottom: 3px;
+  height: 47vw;
+  color: #ffffff;
+  background-color: #131313;
+}
+
+.projects-chapter-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+}
+
+.projects-chapter-item {
+  margin-right: 58px;
+}
+
+.projects-chapter-btn {
+  font-family: 'Yeseva One';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 39px;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  border: none;
+  transition: color 0.2s linear;
+}
+
+.projects-chapter-btn:hover,
+.projects-chapter-btn:focus-visible {
+  color: #e3b873;
+}
+
+.projects-chapter-btn:active {
+  color: var(--color-bronzegold);
+}
+
+.projects-chapter-btn hr {
+  margin: 0;
+  margin-top: -7px;
+  border-color: transparent;
+  transition: border-color 0.2s linear;
+}
+
+.projects-chapter-btn.is-active,
+.is-active hr {
+  color: #e3b873;
+  border-color: #e3b873;
+  pointer-events: none;
+}
+
+.projects-content-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-content-text {
+  max-width: 442px;
+  margin-right: 50px;
+}
+
+.projects-title {
+  font-size: 27px;
+  line-height: 34px;
+  color: #e3b873;
+  letter-spacing: -1.8px;
+  margin-bottom: 29px;
+}
+
+.projects-descr {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 52px;
+}
+
+.projects-p-list {
+  display: grid;
+  grid-template-columns: 156px 1fr;
+  gap: 34px;
+  margin-bottom: 81px;
+}
+
+.projects-p-subtitle {
+  margin-bottom: 9px;
+}
+
+.projects-p-descr {
+  font-size: 13px;
+  line-height: 21px;
+  display: none;
+  opacity: 0;
+}
+
+.projects-p-descr.city.is-active,
+.projects-p-descr.area.is-active,
+.projects-p-descr.time.is-active,
+.projects-p-descr.cost.is-active {
+  display: flex;
+  opacity: 1;
+}
+
+.projects-slider-nav {
+  display: flex;
+  align-items: center;
+}
+
+.projects-slider-nav-btn:hover path,
+.projects-slider-nav-btn:focus-visible path {
+  fill: #e3b873;
+  transition: fill 0.2s linear;
+}
+
+.projects-slider-nav-btn:active path {
+  fill: #e3b873;
+  transition: fill 0.2s linear;
+}
+
+.projects-slider-nav-btn.prev {
+  margin-right: 29px;
+}
+
+.projects-slider-pagination-wrap {
+  display: flex;
+  margin-right: 29px;
+}
+
+.slider-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  transition: background-color 0.2s linear;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider-pagination-bullet:not(:last-child) {
+  margin-right: 17px;
+}
+
+.slider-pagination-bullet.is-active {
+  background-color: #ffffff;
+}
+
+.slider-pagination-bullet.is-active:hover {
+  background-color: #ffffff;
+}
+
+.slider-pagination-bullet:hover,
+.slider-pagination-bullet:focus-visible {
+  background-color: #959595;
+}
+.slider-pagination-bullet:active {
+  background-color: #ffffff;
+}
+
+.projects-slider-nav-btn,
+.fantasies-slider-nav-btn-prev,
+.fantasies-slider-nav-btn-next {
+  font-size: 0;
+  background-color: transparent;
+}
+
+.projects-content-slider {
+  max-width: 679px;
+  min-height: 484px;
+}
+
+.projects-content-slider.mobile {
+  display: none;
+}
+
+.projects-content-image {
+  display: none;
+  width: 100%;
+  height: 484px;
+  opacity: 0;
+}
+
+.projects-content-image.is-active {
+  display: flex;
+  opacity: 1;
+}
+
+.projects-content-image.mobile {
+  display: none;
+}
